@@ -1,0 +1,54 @@
+﻿@using System.Data
+@model System.Data.DataTable
+
+@{
+    ViewBag.Title = "員工列表";
+}
+
+<h2>員工列表</h2>
+
+<table class="table">
+    @if (Model.Rows.Count == 0)
+    {
+        <p>無學生紀錄</p>
+    }
+    else
+    {
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                姓名
+            </th>
+            <th></th>
+        </tr>
+    }
+    @foreach (DataRow row in Model.Rows)
+    {
+        <tr>
+            <td>
+                @row["empid"]
+            </td>
+            <td>
+                @row["empname"]
+            </td>
+            <td>
+                @Html.ActionLink("刪除","Delete",
+               new { empid = row["empid"] },
+               new {@class = "btn btn-danger"}
+               )
+                @Html.ActionLink("修改","Edit",
+                new
+                {
+                    empid = row["empid"],
+                    empname = row["empname"]
+                },
+                    new {@class = "btn btn-info"}
+                )
+            </td>
+        </tr>
+    }
+
+</table>
+

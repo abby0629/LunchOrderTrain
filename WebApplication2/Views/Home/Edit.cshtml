@@ -1,0 +1,52 @@
+﻿@using System.Data
+@model WebApplication2.Models.EditModel
+
+
+@{
+    /**/
+
+    ViewBag.Title = "Edit";
+}
+<h2>編輯資料</h2>
+
+
+@using (Html.BeginForm("Edit", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="form-horizontal">
+        <hr />
+
+
+        <table>
+
+            <tr>
+                <th>@Html.LabelFor(model => model.ID,new {@class ="col-md-12"})</th>
+                <td>
+                    @Html.TextBoxFor(model => model.ID, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.ID)
+
+                </td>
+                <p></p>
+            </tr>
+            <tr>
+                <th>@Html.LabelFor(model => model.NAME)</th>
+                <td>
+               
+                    @Html.TextBoxFor(model => model.NAME, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.NAME, "", new { })
+
+                </td>
+            </tr>
+        </table>
+
+
+
+
+        <input type="submit"
+               value="修改"
+               class="btn btn-default" />
+
+
+    </div>
+
+
+}

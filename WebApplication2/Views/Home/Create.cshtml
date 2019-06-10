@@ -1,0 +1,38 @@
+﻿@model WebApplication2.ViewModel.EmployeeViewModel
+@{
+    ViewBag.Title = "Create";
+}
+@using (Html.BeginForm("Create", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <h2>新增員工</h2>
+    if (ViewBag.ResultMessage != null)
+    {
+        @Html.Label("info", (string)ViewBag.ResultMessage, new { @class = "text-info" })
+    }
+    <table>
+
+        <tr>
+            <th>@Html.LabelFor(model => model.ID)</th>
+            <td>
+                @Html.TextBoxFor(model => model.ID)
+                @Html.ValidationMessageFor(model => model.ID)
+
+            </td>
+        </tr>
+        <tr>
+            <th>@Html.LabelFor(model => model.NAME)</th>
+            <td>
+                @Html.TextBoxFor(model => model.NAME)
+                @Html.ValidationMessageFor(model => model.NAME)
+
+            </td>
+        </tr>
+    </table>
+
+    <input type="submit"
+           value="新增"
+           class="btn btn-default" />
+
+}
+
+
