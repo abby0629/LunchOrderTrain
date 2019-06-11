@@ -299,20 +299,48 @@
     <Content Include="Views\Home\Create.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Edit.cshtml" />
-    <Content Include="Views\Log\Register.cshtml" />
-    <Content Include="Views\Log\Index.cshtml" />
-    <Content Include="Views\Log\Login.cshtml" />
-    <Content Include="Views\Log\Order.cshtml" />
-    <Content Include="Views\Log\EachOrder.cshtml" />
-    <Content Include="Views\Log\EditOrder.cshtml" />
-    <Content Include="Views\Log\Logout.cshtml" />
-    <Content Include="Views\Log\Reader.cshtml" />
-    <Content Include="Views\Log\SaIndex.cshtml" />
-    <Content Include="Views\Log\NormalReader.cshtml" />
-    <Content Include="Views\Log\OrderNextWeek.cshtml" />
-    <Content Include="Views\Log\Photoupload.cshtml" />
-    <Content Include="Views\Log\IndexNextMonth.cshtml" />
-    <Content Include="Views\Log\MenuIndex.cshtml" />
+    <Content Include="Views\Log\Register.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Log\Index.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Log\Login.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Log\Order.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Log\EachOrder.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Log\EditOrder.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Log\Logout.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Log\Reader.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Log\SaIndex.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Log\NormalReader.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Log\OrderNextWeek.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Log\Photoupload.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Log\IndexNextMonth.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Log\MenuIndex.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
